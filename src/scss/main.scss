@@ -2,9 +2,9 @@ $primary: #D4BB6F;
 $secondary: #CDFFCF;
 
 @import "~bootstrap/scss/bootstrap";
-body {
-	// background: gray;
-}
+// body {
+	
+// }
 
 //-------NAv-------//
 
@@ -30,6 +30,13 @@ body {
 		
 		pointer-events: none;
 		z-index: -1;
+	}
+	.trees{
+		position: absolute;
+		top: 0;right: 0;bottom: 0;left: 0;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		z-index: 3;
 	}
 	@media (min-width: 768px) {
 		.phone {
@@ -58,4 +65,61 @@ body {
 }
 .navbar-light .navbar-nav .nav-link {
 	color: $dark;
+}
+
+
+//--------CROWD FUNDED---------//
+
+.crowd{
+
+	padding-top: 100px;
+
+	// & >h1{
+	// 	font-size: 6rem;
+	// 	font-weight: 400;
+	// }
+	// & >h2{
+	// 	font-size: 4rem;
+	// 	font-weight: 400;
+	// }
+
+	.row{
+		// margin-top: 300px;
+	}
+	.col-12 {
+		padding-top: 300px
+	}
+	.card{
+		text-align: center;
+		border-radius: 2rem;
+		// position: relative;
+	}
+	img{
+		margin-top: -300px;
+	}
+	.side-card{
+		font-size: 1.25rem;
+		background-color:#E2DF99;
+		margin-top: 10%;
+	}
+	.main-card{
+		font-size: 1.25rem;
+		background-color: #EACC86;
+	}
+	.main-card h1{
+		font-size: 3.25rem;
+	}
+	.card-body{
+		margin-top: -10px;
+	}
+
+}
+
+//---------flex---------//
+
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
